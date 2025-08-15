@@ -264,4 +264,3 @@ This software is for educational purposes only. Cryptocurrency trading involves 
   *Made with ❤️ for the crypto trading community*
   
 </div>
-# hf

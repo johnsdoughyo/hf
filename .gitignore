@@ -1,15 +1,7 @@
 # Sensitive Configuration Files
 config.json
-dist/config.json
 *.log
 market_maker.log
-dist/market_maker.log
-
-# Additional Security - Block all potential config files
-**/config.json
-**/config.local.json
-**/config.prod.json
-**/config.dev.json
 
 # Private Keys and Wallet Addresses
 *private*
