@@ -1,0 +1,66 @@
+# Sensitive Configuration Files
+config.json
+dist/config.json
+*.log
+market_maker.log
+dist/market_maker.log
+
+# Additional Security - Block all potential config files
+**/config.json
+**/config.local.json
+**/config.prod.json
+**/config.dev.json
+
+# Private Keys and Wallet Addresses
+*private*
+*wallet*
+*secret*
+*key*
+
+# Environment Variables
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup

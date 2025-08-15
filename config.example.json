@@ -1,0 +1,48 @@
+{
+  "exchange": {
+    "name": "hyperliquid",
+    "api_key": "YOUR_API_KEY_HERE",
+    "api_secret": "YOUR_API_SECRET_HERE",
+    "testnet": false,
+    "private_key": "YOUR_PRIVATE_KEY_HERE",
+    "wallet_address": "YOUR_WALLET_ADDRESS_HERE",
+    "comment": "Supported exchanges: binance, bybit, okx, kucoin, gate, mexc, bitget, hyperliquid, phemex, huobi, kraken. For Hyperliquid, use private_key and wallet_address instead of api_key/api_secret."
+  },
+  
+  "trading": {
+    "symbol": "SOL/USDC:USDC",
+    "leverage": 5,
+    "order_size_type": "percentage",
+    "order_size_percent": 0.01,
+    "order_size": 0.001,
+    "comment": "order_size_type can be 'fixed' or 'percentage'. If 'fixed', uses order_size. If 'percentage', uses order_size_percent of available balance. SOL/USDC:USDC is recommended for Hyperliquid."
+  },
+  
+  "strategy": {
+    "gamma": 0.05,
+    "k": 1.5,
+    "time_horizon": 1.0,
+    "sigma_lookback": 100,
+    "update_frequency": 2.0,
+    "min_spread": 0.0001,
+    "max_spread_percent": 0.002,
+    "max_quote_distance_percent": 0.002,
+    "comment": "gamma: risk aversion (0.01-1.0, lower=more aggressive), k: market impact (0.5-5.0), update_frequency: seconds between updates. Lower gamma and max_spread_percent = tighter spreads, more trades."
+  },
+  
+  "risk": {
+    "max_inventory_usd": 1000,
+    "max_position_size_usd": 100,
+    "stop_loss_percent": 0.05,
+    "daily_loss_limit_usd": 50,
+    "comment": "Risk management parameters to protect your capital"
+  },
+  
+  "notifications": {
+    "enabled": false,
+    "telegram_bot_token": "",
+    "telegram_chat_id": "",
+    "email": "",
+    "comment": "Optional: Get notifications about trades and errors"
+  }
+}
