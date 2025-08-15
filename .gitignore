@@ -1,5 +1,7 @@
 # Sensitive Configuration Files
 config.json
+dist/config.json
+dist/*.log
 *.log
 market_maker.log
 
@@ -22,7 +24,6 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -35,6 +36,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+dist/config.json
 
 # Virtual Environment
 venv/
